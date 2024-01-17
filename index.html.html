@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>sai 100 porcento no site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #ccc;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto 1fr;
+            height: 100vh;
+        }
+
+        #title-container {
+            grid-column: 1 / 4;
+            background-color: green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            margin: 0;
+        }
+
+        #title {
+            animation: moveTitle 5s linear infinite;
+        }
+
+        @keyframes moveTitle {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 80px 20px;
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+        }
+
+        canvas {
+            border: 1px solid #000;
+            margin: 10px auto;
+        }
+
+        #game-container {
+            grid-column: 2 / 3;
+        }
+
+        #left-sidebar {
+            grid-column: 1 / 2;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Ajustado para alinhar à esquerda */
+        }
+
+        #sidebar {
+            width: 200px;
+            background-color: #ccc;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            grid-column: 3 / 4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #sidebar img {
+            max-width: 100%;
+            max-height: 200px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        #left-sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #left-sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        #left-sidebar ul ul {
+            margin-top: 10px;
+        }
+    </style>
+    <title>Jogo da Cobrinha</title>
+</head>
+
+<body>
+
+    <div id="title-container">
+        <h1 id="title">Jogo da Cobrinha</h1>
+    </div>
+
+    <div id="container">
+        <div id="left-sidebar">
+            <ul>
+                <a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                    <ul>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                        <li><a href="https://youtu.be/mdUlSd2Md0M?si=YqAwl1s0Spsdgm0z" target="_blank">Se leste isso es gay</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="game-container">
+            <canvas id="snakeCanvas" width="400" height="400"></canvas>
+        </div>
+
+        <div id="sidebar">
+            <h2>Não perca</h2>
+            <img src="https://scontent.fopo2-2.fna.fbcdn.net/v/t1.18169-9/551492_497673796941676_819178340_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c2f564&_nc_ohc=8uH-96ae1BMAX9_bANW&_nc_ht=scontent.fopo2-2.fna&oh=00_AfA1MSXBmJRmBC_XeM6ruTDMRX66oi8kfv8ODvEU8NomNA&oe=65CE97EE"
+                alt="Não perca">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const canvas = document.getElementById("snakeCanvas");
+            const ctx = canvas.getContext("2d");
+
+            const gridSize = 20;
+            let snake = [{
+                x: 10,
+                y: 10
+            }];
+            let food = {
+                x: 15,
+                y: 15
+            };
+            let direction = "right";
+
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                // Desenha a cobrinha
+                ctx.fillStyle = "#00F";
+                snake.forEach(segment => {
+                    ctx.fillRect(segment.x * gridSize, segment.y * gridSize, gridSize, gridSize);
+                });
+
+                // Desenha o alimento
+                ctx.fillStyle = "#F00";
+                ctx.fillRect(food.x * gridSize, food.y * gridSize, gridSize, gridSize);
+            }
+
+            function update() {
+                // Atualiza a posição da cabeça da cobrinha
+                let newHead = {
+                    x: snake[0].x,
+                    y: snake[0].y
+                };
+                switch (direction) {
+                    case "up":
+                        newHead.y--;
+                        break;
+                    case "down":
+                        newHead.y++;
+                        break;
+                    case "left":
+                        newHead.x--;
+                        break;
+                    case "right":
+                        newHead.x++;
+                        break;
+                }
+
+                // Adiciona a nova cabeça à frente da cobrinha
+                snake.unshift(newHead);
+
+                // Verifica colisão com o alimento
+                if (newHead.x === food.x && newHead.y === food.y) {
+                    // Gera um novo alimento em uma posição aleatória
+                    food = {
+                        x: Math.floor(Math.random() * (canvas.width / gridSize)),
+                        y: Math.floor(Math.random() * (canvas.height / gridSize))
+                    };
+                } else {
+                    // Remove a última parte da cobrinha se não houver colisão com o alimento
+                    snake.pop();
+                }
+
+                // Verifica colisão com as bordas
+                if (newHead.x < 0 || newHead.x >= canvas.width / gridSize ||
+                    newHead.y < 0 || newHead.y >= canvas.height / gridSize) {
+                    // Reinicia o jogo se houver colisão com as bordas
+                    snake = [{
+                        x: 10,
+                        y: 10
+                    }];
+                    direction = "right";
+                }
+            }
+
+            function gameLoop() {
+                draw();
+                update();
+            }
+
+            document.addEventListener("keydown", function (event) {
+                // Atualiza a direção da cobrinha com base na tecla pressionada
+                switch (event.key) {
+                    case "ArrowUp":
+                        direction = "up";
+                        break;
+                    case "ArrowDown":
+                        direction = "down";
+                        break;
+                    case "ArrowLeft":
+                        direction = "left";
+                        break;
+                    case "ArrowRight":
+                        direction = "right";
+                        break;
+                }
+            });
+
+            setInterval(gameLoop, 100); // Atualiza o jogo a cada 100 milissegundos
+
+            // Adiciona o evento de clique na imagem
+            const image = document.querySelector("#sidebar img");
+            image.addEventListener("click", function () {
+                window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=7005zH8AjVizMJIa";
+            });
+        });
+    </script>
+
+</body>
+
+</html>
